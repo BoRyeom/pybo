@@ -11,7 +11,7 @@
             {% for field in form %}
                 {% if field.errors %}
                 <strong>{{ field.label }}</strong>
-                {{ field.errors}}
+                {{ field.errors }}
                 {% endif %}
             {% endfor %}
             </div>
@@ -27,7 +27,6 @@
             <textarea class="form-control" name="content" id="content"
                       rows="10">{{ form.content.value|default_if_none:'' }}</textarea>
         </div>
-        <!-- {{ form.as_p }} -->
         <button type="submit" class="btn btn-primary">저장하기</button>
     </form>
 </div>
