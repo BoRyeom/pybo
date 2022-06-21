@@ -27,8 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['3.39.172.25']
 
-
 # Application definition
+SESSION_SERIALIZER = 'django.contrib.sessions.serializers.PickleSerializer'
+
 
 INSTALLED_APPS = [
     'common.apps.CommonConfig',

@@ -25,7 +25,7 @@ def answer_create(request, question_id):
     else:
         form = AnswerForm()
     context = {'question': question, 'form': form}
-    return render(request, 'pybo/question_form.html', context)
+    return render(request, 'pybo/answer_form.html', context)
 
 @login_required(login_url='common:login')
 def answer_modify(request, answer_id):
